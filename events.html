@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | TEDx-VITPune</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+        .past-events-section,
+        .event {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #e62b1e;
+            margin-bottom: 0.5rem;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #e62b1e;
+            width: 60px;
+            margin-bottom: 1rem;
+        }
+
+        .styled-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .styled-table thead {
+            background-color: #e62b1e;
+            color: white;
+        }
+
+        .styled-table th {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .styled-table td {
+            color: black;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            border: 1px solid black;
+            line-height: 1.4;
+            padding: 12px 15px;
+        }
+
+
+        .styled-table tbody tr:hover {
+            background-color: #f3f3f3;
+            transition: background-color 0.3s ease;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        .gallery {
+            max-width: 1100px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .lightbox-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            flex-direction: column;
+        }
+
+        .lightbox-overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 4px solid white;
+            box-shadow: 0 0 30px #000;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="home.html">TEDx-VITPune</a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="v&m.html">Vision & Mission</a>
+            <a href="events.html">Events</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Register</a>
+        </nav>
+    </header>
+
+    <section>
+        <table width="100%" height="600" background="events.jpg" style="background-size: cover;">
+            <tr>
+                <td align="center" valign="center">
+                    <h1 style="color: red; font-size: 3rem;">Events by TEDx-VITPune</h1>
+                    <p style="font-size: 1.5rem;"><b>Showcasing stories and experiences that spark minds and shape
+                            tomorrow</b></p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="event">
+        <h2>Events</h2><br>
+        <p>TEDx-VITPune has curated and hosted impactful events that have brought together diverse voices,
+            groundbreaking ideas, and inspiring stories. Each event reflects our commitment to fostering dialogue,
+            innovation, and community engagement, making every edition a meaningful experience for all.</p>
+    </section>
+
+    <section class="past-events-section">
+        <h2>Past Events</h2><br>
+        <div class="table-container">
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Theme</th>
+                        <th>Highlights</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2015</td>
+                        <td>Growth</td>
+                        <td>Inaugural edition focusing on personal and collective development</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Let's Cross Over</td>
+                        <td>Encouraged stepping out of comfort zones and embracing new challenges</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td>
+                        <td>Connect the Dots</td>
+                        <td>Talks on entrepreneurship, environmental sustainability, and leadership</td>
+                    </tr>
+                    <tr>
+                        <td>2018</td>
+                        <td>-</td>
+                        <td>Continued tradition of hosting diverse speakers and engaging the community</td>
+                    </tr>
+                    <tr>
+                        <td>2019</td>
+                        <td>Unravelling the Parallax</td>
+                        <td>Symbolized shifting perspectives with a rotating stage</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Countdown (Climate Focus)</td>
+                        <td>Focused on climate change and sustainability as part of TED global</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>Epiphany</td>
+                        <td>Centered on moments of sudden insight and realization</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>-</td>
+                        <td>Continued to showcase innovative ideas and foster discussions</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Embracing the Pandemonium</td>
+                        <td>Growth and resilience amidst chaos and uncertainty</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>The Space Between</td>
+                        <td>Interactive workshops & performances on life's transitions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <h2 style="text-align: center;">Gallery</h2>
+    <div class="gallery">
+        <img src="event_1.jpg" alt="Artifact 1">
+        <img src="event_2.jpg" alt="Exhibit 2">
+        <img src="event_3.jpg" alt="Museum Interior">
+        <img src="event_4.jpg" alt="Special Exhibition">
+        <img src="event_5.jpg" alt="Exhibit 5">
+        <img src="event_6.jpg" alt="Exhibit 6">
+    </div>
+
+    <div class="lightbox-overlay" id="lightbox">
+        <span class="lightbox-close">✖</span>
+        <img src="" alt="Enlarged Image" />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".gallery img").click(function () {
+                const imgSrc = $(this).attr("src");
+                $("#lightbox img").attr("src", imgSrc);
+                $("#lightbox").css("display", "flex").hide().fadeIn();
+            });
+
+            $(".lightbox-close, #lightbox").click(function (e) {
+                if ($(e.target).is("#lightbox") || $(e.target).hasClass("lightbox-close")) {
+                    $("#lightbox").fadeOut();
+                }
+            });
+        });
+    </script>
+
+    <footer>&copy; TEDx-VITPune 2025. All Rights Reserved.</footer>
+</body>
+
+</html>

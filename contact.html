@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEDx-VITPune Contact</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            background-color: #1a162c;
+            margin-top: 2rem;
+            border: 1px solid black;
+            border-radius: 10px;
+            line-height: 1.6;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #d71920;
+            border-bottom: 2px solid #d71920;
+            padding-bottom: 0.5rem;
+        }
+
+        section p {
+            margin: 0.5rem 0;
+        }
+
+        a {
+            color: #0055aa;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .faq-section {
+            max-width: 800px;
+            margin: auto;
+            padding: 2rem;
+            font-family: sans-serif;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #1a162c;
+            padding: 1rem;
+            width: 100%;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* .faq-question:hover {
+            background: ;
+        } */
+
+        .faq-answer {
+            display: none;
+            padding: 1rem;
+            background: #1a162c;
+            font-size: 0.95rem;
+            text-align: left;
+        }
+
+        .faq-answer.show {
+            display: block;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .arrow.rotate {
+            transform: rotate(90deg);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header nav {
+                margin-top: 10px;
+            }
+
+            header nav a {
+                display: inline-block;
+                margin: 0.3rem 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a id="logo" href="home.html">TEDx-VITPune</a>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="v&m.html">Vision & Mission</a>
+            <a href="events.html">Events</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Register</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contact Details</h2>
+        <p><strong>Email:</strong> tedx@vit.edu</p>
+        <p><strong>Phone:</strong> +91-12345-67890</p>
+        <p><strong>Address:</strong> Vishwakarma Institute of Technology<br>
+            666, Upper Indiranagar,<br>
+            Bibwewadi, Pune, Maharashtra 411037, India</p>
+    </section>
+
+    <section>
+        <h2>Social Media</h2>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/tedxvitpune/">@tedxvitpune</a></p>
+        <p><strong>Facebook:</strong> <a href="https://www.facebook.com/TEDxVITPune/">TEDxVITPune</a></p>
+        <p><strong>LinkedIn:</strong> <a
+                href="https://www.linkedin.com/company/tedxvitpune/?originalSubdomain=in">TEDxVITPune</a></p>
+    </section><br><br>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions (FAQs)</h2>
+        <br>
+        <div class="faq-item">
+            <button class="faq-question">
+                How is TEDxVITPune different from TED?
+                <span class="arrow">&#9656;</span>
+            </button>
+            <div class="faq-answer">
+                TEDxVITPune is locally organized under TED guidelines, whereas TED is a global conference organized by
+                TED itself.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Who can attend TEDxVITPune events?
+                <span class="arrow">&#9656;</span>
+            </button>
+            <div class="faq-answer">
+                Anyone with an interest in ideas and innovation is welcome to attend, including students, professionals,
+                and the general public.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                How often are events organized?
+                <span class="arrow">&#9656;</span>
+            </button>
+            <div class="faq-answer">
+                TEDxVITPune hosts one major annual event and may also conduct smaller sessions or workshops throughout
+                the year.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What kind of themes do TEDxVITPune events follow?
+                <span class="arrow">&#9656;</span>
+            </button>
+            <div class="faq-answer">
+                Each event is centered around a unique theme that encourages diverse and meaningful discussions.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Where can I watch previous TEDxVITPune talks?
+                <span class="arrow">&#9656;</span>
+            </button>
+            <div class="faq-answer">
+                You can find our past talks on the TEDx YouTube channel or our official website.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Is there a fee to attend or participate in the events?
+                <span class="arrow">&#9656;</span>
+            </button>
+            <div class="faq-answer">
+                Some events may have a nominal fee to cover costs, but many are free or subsidized for students.
+            </div>
+        </div>
+    </section><br><br>
+
+    <script>
+        const questions = document.querySelectorAll(".faq-question");
+
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                const arrow = question.querySelector(".arrow");
+
+                answer.classList.toggle("show");
+                arrow.classList.toggle("rotate");
+            });
+        });
+    </script>
+
+    <footer>&copy; TEDx-VITPune 2025. All Rights Reserved.</footer>
+</body>
+
+</html>

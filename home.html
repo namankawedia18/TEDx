@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TEDx-VITPune</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom Navbar CSS -->
+  <link rel="stylesheet" href="navbar.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: rgb(28, 19, 39);
+      color: white;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    #logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: red;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: red;
+    }
+
+    .carousel-item img {
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 20px;
+      background: linear-gradient(to bottom right, #ffffff, #f8f8f8);
+      color: black;
+      border-radius: 8px;
+      border-left: 5px solid red;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section h1,
+    section h2 {
+      color: red;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid red;
+      width: 60px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      color: black;
+    }
+
+    #key {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    #key .highlight-box {
+      margin-bottom: 25px;
+      background-color: white;
+      padding: 20px;
+      border-left: 5px solid red;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    #key h3 {
+      color: red;
+    }
+
+    #key a {
+      color: red;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    #key a:hover {
+      color: #ff6600;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-weight: 600;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .carousel-item img {
+        height: 250px;
+      }
+
+      nav {
+        font-size: 0.9rem;
+      }
+
+      section {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a id="logo" href="home.html">TEDx-VITPune</a>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="v&m.html">Vision & Mission</a>
+      <a href="events.html">Events</a>
+      <a href="achievements.html">Achievements</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Register</a>
+    </nav>
+  </header>
+
+  <!-- Bootstrap Carousel with Text Overlay -->
+  <div id="tedxCarousel" class="carousel slide" data-bs-ride="carousel" style="max-width: 100%; margin: 20px auto;">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="vit.png" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to TEDx-VITPune</h5>
+          <p style="color: white;">Where Ideas Ignite Change</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="home page.jpg" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Past Highlights</h5>
+          <p style="color: white;">50+ Inspiring Speakers Across 9 Editions</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="tedx.jpg" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Global Ideas, Local Voices</h5>
+          <p style="color: white;">From VIT Pune to the World</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#tedxCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#tedxCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <section>
+    <h1>Welcome to TEDx-VITPune</h1>
+    <p>Igniting Ideas, Inspiring Action — From VIT Pune to the World</p>
+  </section>
+
+  <section>
+    <h2>About Us</h2>
+    <p>TEDxVITPune is an independently organized TEDx event hosted by Vishwakarma Institute of Technology, Pune.
+      It serves as a platform for thinkers, innovators, and changemakers to share powerful ideas that inspire
+      action. Aligned with TED’s mission of "Ideas Worth Spreading," TEDxVITPune aims to spark conversations
+      and foster a culture of curiosity and innovation within the local community.</p>
+  </section>
+
+  <section>
+    <h2>Our Journey</h2>
+    <p>TEDxVITPune has successfully hosted 9 impactful editions with themes ranging from "Connecting the Dots"
+      to "The Space Between", featuring over 50+ inspiring speakers and engaging thousands of attendees.</p>
+  </section>
+
+  <section>
+    <h2>Ideas That Echo Beyond the Event</h2>
+    <p>We believe in the transformative power of ideas and the ability of individuals to bring meaningful
+      change—starting with a spark, a story, and a shared space for dialogue.</p>
+  </section>
+
+  <section id="key">
+    <h2>Key Highlights</h2>
+    <div class="highlight-box">
+      <h3>Mission and Vision</h3>
+      <p>Know more about our mission and vision</p>
+      <a href="v&m.html">Learn More</a>
+    </div>
+    <div class="highlight-box">
+      <h3>Events</h3>
+      <p>Explore our events</p>
+      <a href="events.html">Learn More</a>
+    </div>
+    <div class="highlight-box">
+      <h3>Our Achievements</h3>
+      <p>Celebrate our achievements</p>
+      <a href="achievements.html">Learn More</a>
+    </div>
+  </section>
+
+  <footer>&copy; TEDx-VITPune 2025. All Rights Reserved.</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

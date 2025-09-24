@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(event.jpg);
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+}
+
+header {
+    background-color: black; /* deep red */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+        color: red;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 600;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
